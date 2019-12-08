@@ -1,41 +1,100 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Femme Up Fitness
-    </ion-title>
-  </ion-toolbar>
+  <div class="ui massive inverted gray menu">
+    <div class="header item">
+      Home
+    </div>
+  </div>
 </ion-header>
 
-<ion-content>
-    <ion-card class="welcome-card">
-      <img src="https://mail.google.com/mail/u/0?ui=2&ik=7d69612834&attid=0.1&permmsgid=msg-f:1652297108340338768&th=16ee23773e07f050&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_839cGyUSmSGKCG0xlEv7z3j6M-KGjXEahOf1AGUt1fNgv8RW16Pf71cut2g4hZHZaz8zMyut1S5qKomvxEc_JXf2kIS0qbO3_IYIKPUcHq54hFOjjYQtjzQY&disp=emb&realattid=ii_k3w2tm010" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Let's get started!</ion-card-subtitle>
-        <ion-card-title>Now... LET'S GET FEMMEFIT!!</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now over this 3-4 months we are going to help you bust your ass, and have courses to help you love your body! If you already love your body, then great! Join us and help others in the community love theirs too!</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Fun Stuff</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Create Your Account/Sign in</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label> Journey! and Community!</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Self Love and more helpful casts to help your mind rest after a hard workout or when you have trouble sleeping!</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Mini Games</ion-label>
-      </ion-item>
-    </ion-list>
-</ion-content>
+<ion-content color="dark">
+    <div class="ui padded grid"
+      style="margin-top: 20px">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui inverted header">
+            Welcome user
+          </h3>
+        </div>
+        <div class="eight wide right aligned column">
+          <img src=""
+            class="ui avatar image">
+        </div>
+      </div>
+    </div>
+    <div class="ui padded grid">
+      <div class="sixteen wide column">
+        <h3 class="ui dividing inverted header">Recent</h3>
+      </div>
+    </div>
+    <div class="ui padded grid">
+      <div class="eight wide column">
+        <div class="ui inverted small statistic">
+          <div class="value">
+            <i class="pink bed icon"></i> 6
+          </div>
+          <div class="label">
+            Sleep
+          </div>
+        </div>
+      </div>
+      <div class="eight wide right aligned column">
+        <div class="ui inverted small statistic">
+          <div class="value">
+            <i class="blue walking icon"></i> 200
+          </div>
+          <div class="label">
+            Walking
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui padded grid">
+      <div class="eight wide column">
+        <div class="ui inverted small statistic">
+          <div class="value">
+            <i class="red heart icon"></i> 67
+          </div>
+          <div class="label">
+            HRV
+          </div>
+        </div>
+  
+      </div>
+      <div class="eight wide right aligned column">
+        <div class="ui inverted small statistic">
+          <div class="value">
+            <i class="yellow burn icon"></i> 12
+          </div>
+          <div class="label">
+            Energy
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui padded grid">
+      <div class="row">
+        <div class="sixteen wide column">
+          <h3 class="ui dividing inverted header">My Fitness Tracker</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="sixteen wide column">
+          <div class="ui clearing inverted yellow segment"
+            *ngFor="let practice of ['Gym', 'Walking']">
+            <div class="ui toggle checkbox">
+              <input type="checkbox"
+                name="public">
+            </div>
+            <h3 class="ui right floated inverted header">{{practice}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="ion-padding">
+      <button class="ui labeled icon fluid teal button">
+        <i class="sync icon"></i>
+        Sync my data
+      </button>
+      <ion-text>Last Sync</ion-text>
+    </div> -->
+  </ion-content>
